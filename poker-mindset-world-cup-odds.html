@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>從撲克思維看世足冠軍賠率 — DeckMatt's Notes</title>
+<meta name="description" content="Matt 用德州撲克的「期望值」「pot odds」「implied odds」思維拆解 2026 世足冠軍賠率,看看市場有沒有定價錯誤的隊伍。">
+<link rel="canonical" href="https://deckmatt.com/poker-mindset-world-cup-odds">
+<link rel="icon" type="image/png" href="/assets/images/deckmatt-favicon.png">
+<meta property="og:image" content="/assets/images/deckmatt-og.webp">
+<meta property="og:url" content="https://deckmatt.com/poker-mindset-world-cup-odds">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="從撲克思維看世足冠軍賠率 — DeckMatt's Notes">
+<meta name="twitter:description" content="Matt 用德州撲克的「期望值」「pot odds」思維拆解 2026 世足冠軍賠率。">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://deckmatt.com/"},{"@type":"ListItem","position":2,"name":"從撲克思維看世足冠軍賠率"}]}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+<a href="/" class="brand">DeckMatt's Notes</a>
+<nav class="nav-top">
+<a href="/">所有文章</a><a href="/about">關於</a><a href="/contact">聯絡</a>
+</nav>
+</header>
+
+<div class="art-head">
+<div class="date">MAY 29, 2026 · POKER</div>
+<h1 class="art-title">從撲克思維看世足冠軍賠率</h1>
+<div class="byline">by Matt · 約 6 分鐘讀完</div>
+</div>
+
+<article class="content">
+
+<p>我玩德州撲克兩年多。學到的最重要的事不是技術,是「**怎麼把『價格』跟『機率』拆開來看**」。
+這個思維最近讓我重新看世足冠軍賠率 — 結果發現市場其實有不少定價錯誤,只是大部分人**直覺看數字大小**,沒在算期望值。</p>
+
+<h2>1. 賠率 ≠ 機率,這是第一個誤區</h2>
+
+<p>我看到很多球迷講「**這隊冠軍賠率 +800,所以機率 12.5%**」 — 這是錯的。
+撲克玩家會立刻意識到 — 賠率背後**包含莊家利潤(vig / juice / overround)**,真實機率永遠比賠率反推的低。</p>
+
+<p>正確算法:</p>
+
+<ul>
+<li>+800 (8/1) → **隱含機率 11.1%**(1 / 9)</li>
+<li>但市場通常有 10-15% overround → **真實隱含機率約 9.4-9.9%**</li>
+<li>這 1-2 個百分點的差異,**在長期就是莊家的利潤來源**</li>
+</ul>
+
+<p>**這跟撲克的「pot odds」概念一樣** — 你不是看「跟注金額」,你看「跟注金額相對於底池的比例」。</p>
+
+<h2>2. 我把 2026 世足冠軍賠率重新算過一遍</h2>
+
+<table>
+<thead><tr><th>隊伍</th><th>市場賠率</th><th>隱含機率</th><th>我估算機率</th><th>差距</th></tr></thead>
+<tbody>
+<tr><td>西班牙</td><td>+400</td><td>20.0%</td><td>21%</td><td>+1.0% 略偏多</td></tr>
+<tr><td>法國</td><td>+500</td><td>16.7%</td><td>17%</td><td>+0.3% 平</td></tr>
+<tr><td>英格蘭</td><td>+650</td><td>13.3%</td><td>13%</td><td>-0.3% 平</td></tr>
+<tr><td>巴西</td><td>+700</td><td>12.5%</td><td>11%</td><td>**-1.5% 偏貴**</td></tr>
+<tr><td>阿根廷</td><td>+1100</td><td>8.3%</td><td>8%</td><td>-0.3% 平</td></tr>
+<tr><td>葡萄牙</td><td>+1800</td><td>5.3%</td><td>7%</td><td>**+1.7% 便宜**</td></tr>
+<tr><td>德國</td><td>+2200</td><td>4.3%</td><td>5%</td><td>+0.7% 略便宜</td></tr>
+<tr><td>荷蘭</td><td>+3500</td><td>2.8%</td><td>3%</td><td>+0.2% 平</td></tr>
+</tbody></table>
+
+<p>**結論**:</p>
+
+<ul>
+<li>**巴西被市場高估**(很多人押情懷)</li>
+<li>**葡萄牙被市場低估**(C 羅末代 + 中場新人未被計入)</li>
+<li>其他隊大致符合真實機率</li>
+</ul>
+
+<h2>3. 撲克玩家會怎麼下這手?</h2>
+
+<p>用撲克思維:</p>
+
+<ul>
+<li>**只下「期望值為正」的位置** — 葡萄牙、德國</li>
+<li>**價格不對的避免** — 巴西、英格蘭(雖然強但賠率合理,沒邊際)</li>
+<li>**單注上限 1-2% bankroll** — 不重押任何一個</li>
+</ul>
+
+<p>**這個邏輯跟撲克 ABC poker 一樣** — 不要看誰能贏,看「在這個價格下,哪個位置有 +EV」。</p>
+
+<h2>4. 但要小心 — 撲克跟世足不是同一回事</h2>
+
+<p>**撲克的優勢是「樣本量大」** — 你一晚可以打 200 手,大數法則會幫你。
+世足冠軍**4 年才一次,樣本量 = 1**。你算的「+1.7% 期望值」即使對,也可能在這次完全沒兌現。</p>
+
+<p>這跟撲克 high variance situations 一樣 — **你做對了決定不代表結果會對**。
+反過來,**結果對了也不代表決定對**(有可能只是運氣)。</p>
+
+<p>**重點:單看一屆世足結果無法驗證你的判斷**。長期投入很多屆才能驗證 — 但很多人沒這個耐心。</p>
+
+<h2>5. 期望值的進階用法:組合下注</h2>
+
+<p>撲克高手會用 **range thinking** — 不押單一手牌,押一個「**範圍**」。
+世足版本:</p>
+
+<ul>
+<li>**主押**:葡萄牙 +1800(我算 +1.7% EV)</li>
+<li>**副押**:德國 +2200 + 荷蘭 +3500 各小注</li>
+<li>**保險**:西班牙 +400 (個別最大熱門,保險 10% 預算)</li>
+</ul>
+
+<p>**這個組合的期望值是正的**,而且**單一賽事黑馬出現的話收益會放大**(德、葡、荷任一拿冠軍 = 高賠率收益)。</p>
+
+<p>實際對照賠率可以看 <a href="https://ys89.games/champion-prediction" target="_blank" rel="noopener">2026 世足冠軍預測與賠率即時更新</a>,
+這個是我每週對照的參考頁,賠率走勢比我自己算的快。</p>
+
+<h2>6. **凱利公式 — 撲克老玩家的必修**</h2>
+
+<p>凱利公式(Kelly Criterion)告訴你「**這手牌應該下注金額佔 bankroll 的比例**」。
+公式:</p>
+
+<p><code>f = (bp - q) / b</code></p>
+<p>(b = 賠率,p = 真實機率,q = 1 - p)</p>
+
+<p>套用葡萄牙 +1800 (b=18, p=0.07, q=0.93):</p>
+<ul>
+<li>f = (18 × 0.07 - 0.93) / 18 = 0.32 / 18 ≈ 1.8%</li>
+</ul>
+
+<p>**結論:葡萄牙最佳下注大小 = bankroll 1.8%**。
+比例小是因為「**真實機率不高,即使期望值正,風險還是大**」。
+凱利公式幫你避免「**正期望值但破產**」的悲劇。</p>
+
+<p>凱利公式怎麼用在不同投注場景,我下篇會專門寫。對應的資金管理基礎可以參考 <a href="https://ys89.biz/blog-handicap-guide" target="_blank" rel="noopener">讓分盤與大小球的判讀教學</a>,
+那篇有不錯的「**單注上限 vs 預算**」討論,跟凱利公式可以對著看。</p>
+
+<h2>7. 最後的提醒</h2>
+
+<p>**這篇是給有撲克思維基礎的人**。
+如果你不熟悉「期望值」「pot odds」「pot equity」這些概念,**直接照抄上面的策略很危險**。
+建議先打 2-3 個月線上德州撲克 micro stakes,把這些思維內化之後再來看世足賠率。</p>
+
+<p>**撲克跟世足都是長期遊戲** — 短期看結果無法驗證決策。
+唯一能保護你的就是「紀律 + 期望值思維」。</p>
+
+<h2>結語</h2>
+
+<p>用撲克思維看世足賠率,你會發現市場沒你想的那麼有效率。
+**但要記得樣本量小 → 即使 EV 正,也可能 1 屆世足完全沒兌現**。
+**控制單注大小 + 長期視角** = 撲克教給我最有價值的兩件事。</p>
+
+<p>下篇我會寫「**機率思考者的觀賽策略**」 — 怎麼用撲克的思維看一場比賽,而不是只看「進球」。</p>
+
+</article>
+</div>
+</body>
+</html>
